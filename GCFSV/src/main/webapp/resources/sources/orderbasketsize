@@ -1,0 +1,11 @@
+{
+"cols": [
+	{"id": "Time", "label": "Time", "type": "string"},
+	{"id": "Max", "label": "Max", "type": "number"},
+	{"id": "Min", "label": "Min", "type": "number"},
+	{"id": "AverageBasketSize", "label": "Average Basket Size", "type": "number"},
+	{"id": "DollarValue", "label": "Dollar Value", "type": "number"}
+]
+}
+
+

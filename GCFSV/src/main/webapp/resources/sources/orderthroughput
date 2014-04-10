@@ -1,0 +1,10 @@
+{
+"colsDateTime": [
+	{"id": "Time", "label": "Time", "type": "datetime"},
+	{"id": "Orders", "label": "Orders", "pattern":"###,###", "type": "number"}
+],
+"colsDate": [
+	{"id": "Time", "label": "Time", "type": "date"},
+	{"id": "Orders", "label": "Orders", "pattern":"###,###", "type": "number"}
+]
+}

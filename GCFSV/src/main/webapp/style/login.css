@@ -1,0 +1,74 @@
+html{
+	background-image: url(../image/login_pattern.png);
+	background-color: #f4f4f4;
+	height: 100%;
+}
+body{
+	height: 100%;
+	background: url(../image/login_bg_right_corner.png) no-repeat right bottom;
+/* 	background-attachment: fixed;	 */
+}
+
+#container{
+	position: relative;
+}
+
+.message{
+	min-height: 80px;
+	overflow: hidden;
+	width: 600px;
+	margin: 10px auto;
+}
+
+.gcf-alert-danger{
+	background: url(../image/icons/warning_icon.png) no-repeat 5px #ef7575;
+	border-color: #dd5c5c;
+	color: #FFF;
+	padding-left: 40px;
+}
+
+.login-fm{
+	background: url(../image/login_form_bg.png) no-repeat;
+	width: 740px;
+	height: 440px;
+	overflow: hidden;
+	margin: 0 auto;
+}
+
+.form-signin{
+	max-width: 350px;
+	margin:0 auto;
+	margin-top: 120px;
+	padding: 15px;
+	font-size: 16px;
+}
+.form-signin input, .form-signin button, .form-signin div{
+	margin: 10px 0;
+}
+.form-signin input{
+	padding-right: 30px;
+}
+
+.align-center{
+	text-align: center;
+}
+
+.btn-login{
+	color: #fff;
+	background-color: #475178;
+	border-bottom-color: #2e3758;
+	border-right-color: #2e3758;
+	border-width: 2px;
+}
+.btn:hover, .btn:focus{
+	color: #fff;
+}
+
+.username{
+	background: url(../image/icons/user_icon.png) no-repeat right;
+}
+
+.password{
+	background: url(../image/icons/key_icon.png) no-repeat right;
+	
+}

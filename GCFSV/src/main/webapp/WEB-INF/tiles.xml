@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" ?>
+<!DOCTYPE tiles-definitions PUBLIC
+"-//Apache Software Foundation//DTD Tiles Configuration 2.1//EN"
+"http://tiles.apache.org/dtds/tiles-config_2_1.dtd">
+<tiles-definitions>
+
+	<definition name="dt.template" template="/jsp/common/base.jsp">
+		<put-attribute name="title" value="GCF" />
+		<put-attribute name="header" value="" />
+		<put-attribute name="body" value="" />
+		<put-list-attribute name="stylesInherit">
+			<add-attribute value="/style/font-awesome.css" />
+			<add-attribute value="/style/bootstrap.min.css" />
+			<add-attribute value="/style/bootstrap-responsive.css" />
+			<add-attribute value="/style/login.css" />
+		</put-list-attribute>
+		<put-list-attribute name="favicon">
+			<add-attribute value="/image/icons/favicon.ico" />
+		</put-list-attribute>
+		<put-list-attribute name="styles" />
+		<put-list-attribute name="scriptsInherit">
+			<add-attribute value="/script/jquery.js" />
+			<add-attribute value="/script/html5shiv.js" />
+			<add-attribute value="/script/respond.min.js" />
+			<add-attribute value="/script/bootstrap.min.js" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" />
+	</definition>
+	
+	<!-- LOGIN PAGE -->
+	<definition name="login.tile" extends="dt.template">
+		<put-attribute name="title" value="GCF - LOGIN" />
+		<put-attribute name="body" value="/jsp/common/login.jsp" />
+		<put-list-attribute name="scripts" inherit="true">
+			<add-attribute value="/script/gcf-cookie.js" />
+			<add-attribute value="/script/login.js" />
+		</put-list-attribute>
+	</definition>
+	<definition name="gcfsv.template" template="/jsp/common/main.jsp">
+		<put-attribute name="title" value="GCF" />
+		<put-attribute name="header" value="/jsp/common/header.jsp" />
+		<put-attribute name="body" value="" />
+		<put-attribute name="footer" value="/jsp/common/footer.jsp" />
+		<put-list-attribute name="stylesInherit">
+			<add-attribute value="/style/font-awesome.css" />
+			<add-attribute value="/style/bootstrap.min.css" />
+		</put-list-attribute>
+		<put-list-attribute name="favicon">
+			<add-attribute value="/image/icons/favicon.ico" />
+		</put-list-attribute>
+		<put-list-attribute name="styles" />
+		<put-list-attribute name="scriptsInherit">
+			<add-attribute value="/script/jquery.js" />
+			<add-attribute value="/script/html5shiv.js" />
+			<add-attribute value="/script/respond.min.js" />
+			<add-attribute value="/script/bootstrap.min.js" />
+		</put-list-attribute>
+		<put-list-attribute name="scripts" />
+	</definition>
+
+	<!-- HOME PAGE -->
+	<definition name="home.index.tile" extends="gcfsv.template">
+		<put-attribute name="body" value="/jsp/home/index.jsp" />
+	</definition>
+</tiles-definitions>
