@@ -71,7 +71,7 @@
 								<phase>install</phase>
 								<configuration>
 									<tasks>
-										<!-- delete test 1-->
+										<!-- delete test 123-->
 										<delete file="D:/HEB/COMS/apache-tomcat-7.0.50/webapps/gcfsv.war"/>
 										<sleep seconds="12"/>
 										<echo message="copying new war file to tomcat's webapps directory" />
